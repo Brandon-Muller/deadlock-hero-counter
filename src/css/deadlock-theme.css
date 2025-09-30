@@ -1,0 +1,40 @@
+body {
+    background-color: #1a1a1a; /* Dark background for the Deadlock theme */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+h1, h2, h3 {
+    color: #ffcc00; /* Gold color for headings */
+}
+
+.dropdown {
+    background-color: #333333; /* Darker background for dropdowns */
+    border: 2px solid #ffcc00; /* Gold border for dropdowns */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside dropdowns */
+    margin: 10px 0; /* Margin between dropdowns */
+    color: #ffffff; /* White text for dropdown options */
+    font-size: 16px; /* Font size for dropdown text */
+}
+
+.dropdown:hover {
+    background-color: #444444; /* Slightly lighter on hover */
+}
+
+.dropdown:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #ffcc00; /* Gold glow on focus */
+}
+
+.dropdown-icon {
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+.highlight {
+    background-color: #ffcc00; /* Highlight color for the first two dropdowns */
+    color: #1a1a1a; /* Dark text for highlighted dropdowns */
+}

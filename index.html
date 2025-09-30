@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadlock Hero Counter</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Deadlock Hero Countering Guide</h1>
+        </header>
+
+        <main>
+            <section class="team-selection">
+                <div class="lane-heroes">
+                    <h2>Lane Opponents</h2>
+                    <div class="hero-selectors">
+                        <div class="hero-selector highlighted">
+                            <label for="laner1">Enemy Laner 1</label>
+                            <select id="laner1" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                        <div class="hero-selector highlighted">
+                            <label for="laner2">Enemy Laner 2</label>
+                            <select id="laner2" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-heroes">
+                    <h2>Enemy Team</h2>
+                    <div class="hero-selectors">
+                        <div class="hero-selector">
+                            <label for="team1">Team Member 1</label>
+                            <select id="team1" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                        <div class="hero-selector">
+                            <label for="team2">Team Member 2</label>
+                            <select id="team2" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                        <div class="hero-selector">
+                            <label for="team3">Team Member 3</label>
+                            <select id="team3" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                        <div class="hero-selector">
+                            <label for="team4">Team Member 4</label>
+                            <select id="team4" class="hero-dropdown">
+                                <option value="">Select Hero...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear-section">
+                    <button id="clear-all-btn" class="clear-all-button">
+                        Clear All Selections
+                    </button>
+                </div>
+            </section>
+
+            <section class="counter-results">
+                <h2>Recommended Counters</h2>
+                <div id="counter-display" class="counter-grid">
+                    <p>Select enemy heroes to see counter recommendations...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load scripts in order -->
+    <script src="src/js/item-costs.js"></script>
+    <script src="src/js/security.js"></script>
+    <script src="src/js/heroData.js"></script>
+    <script src="src/js/counterData.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
